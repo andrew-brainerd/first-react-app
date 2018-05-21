@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Greeting from './Greeting';
 import Clock from './Clock.js';
 import logo from './logo.svg';
 import './App.css';
@@ -6,8 +7,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <h1>Hello, {this.props.name}</h1>,
-      <Clock />
+      <div>
+        <Greeting name={this.props.name} />
+        <Clock />
+      </div>
     );
   }
 }
