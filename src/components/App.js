@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Greeting from './Greeting';
 import Clock from './Clock';
 import './App.css';
@@ -9,6 +9,7 @@ export default class App extends Component {
       <div>
         <Greeting name={this.props.name} />
         <Clock />
+        {this.props.children}
       </div>
     );
   }
