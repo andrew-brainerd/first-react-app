@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import Greeting from './Greeting';
-import Clock from './Clock.js';
-import logo from './logo.svg';
+import Clock from './Clock';
 import './App.css';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div>
@@ -14,5 +13,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
